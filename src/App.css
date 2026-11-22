@@ -1,0 +1,76 @@
+/* AppsFlyer Web Attribution Demo App */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+}
+
+.left-panel {
+  width: 62%;
+  overflow-y: auto;
+  border-right: 1px solid #e5e7eb;
+}
+
+.right-panel {
+  width: 38%;
+  overflow-y: auto;
+}
+
+/* Responsive layout for tablet/mobile */
+@media (max-width: 1024px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .right-panel {
+    width: 100%;
+  }
+}
+
+/* Ensure smooth scrolling */
+.left-panel::-webkit-scrollbar,
+.right-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.left-panel::-webkit-scrollbar-track,
+.right-panel::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.left-panel::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.left-panel::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.right-panel::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.right-panel::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+.right-panel::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
